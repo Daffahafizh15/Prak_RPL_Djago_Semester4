@@ -19,7 +19,7 @@ def login_view(request):
             login(request, user)
 
             # Setelah login masuk ke halaman utama
-            return redirect('index')
+            return redirect('daftar_mahasiswa')
 
         else:
             messages.error(
