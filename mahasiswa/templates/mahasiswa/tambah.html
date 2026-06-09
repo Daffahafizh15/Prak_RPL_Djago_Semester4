@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Tambah Mahasiswa</h2>
+
+<form method="post">
+  {% csrf_token %}
+
+  NIM: <input type="text" name="nim"><br>
+  Nama: <input type="text" name="nama"><br>
+  Program Studi: <input type="text" name="programstudi"><br>
+  Angkatan: <input type="text" name="angkatan"><br>
+
+  <button type="submit">Simpan</button>
+</form>
+
+{% endblock %}
