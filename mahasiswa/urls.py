@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', RedirectView.as_view(url='daftar/')),
+    path('index/', views.index, name='index')
     path('daftar/', views.daftar_mahasiswa, name='daftar_mahasiswa'),
     path('tambah/', views.tambah_mahasiswa, name='tambah_mahasiswa'),
     path('edit/<int:id>/', views.edit_mahasiswa, name='edit_mahasiswa'),

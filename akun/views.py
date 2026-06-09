@@ -34,4 +34,4 @@ def logout_view(request):
     logout(request)
 
     # Setelah logout kembali ke halaman login
-    return redirect('login')
+    return redirect('index')
